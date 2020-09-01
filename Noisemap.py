@@ -3,50 +3,39 @@ import numpy as np
 import noise
 import random
 from PIL import Image
+from Filter import Filter
 
 SCRIPT_PATH = (os.path.dirname(os.path.abspath(__file__)))
 SEED = random.randint(1,100000)
 
-# Image Dimensions
-WIDTH = 2048
-HEIGHT = 1024
-
-#Perlin Noise Parameters
-scale = 200
-octaves = 5
-persistence = .5
-lacunarity = 2.0
-land_bias = 0.0	    # Recommeneded: -0.25 to 0.25
-
 class Noisemap:
-    def __init__(self, width, height, scale, octaves, persistence, lacunarity, 
-                    filter1, filter2=None, land_bias=0.0):
+    def __init__(self, width, height, config):
         self.width = width
         self.height = height
-        self.scale = scale
-        self.octaves = octaves
-        self.persistence = persistence
-        self.lacunarity = lacunarity
-        self.filter1 = filter1
-        self.filter2 = filter2
-        self.land_bias = land_bias
-        self.world = None
-        self.__main()
+        self.noise = config.noise
+        self.filter = None
+        self.filter_config = config.filters
+        self.world = None # set in main
+        self.load_filter(config.filters)
+        self.__main(config.filters)
 
-    def __main(self):
+    def load_filter(self, filter_config):
+        self.filter = Filter(filter_config['path'], filter_config['weight'])
+
+    def __main(self, filter_config):
         # Make initial world filled with noise layers and pre-set filter
         # Values are constrained around 0 (typically between -0.3 and 0.3)
         self.make_noise()
 
-        if self.filter1 is not None:
-            self.subtract_filter(self.filter1)
+        if self.filter is not None:
+            self.subtract_filter(self.filter)
 
         # Change unbounded range to range of 0 and 1
         self.interpolate()
 
         # Creates an array from the interpolated world that adds land_bias 
         # and the second filter if necessary
-        if land_bias != 0.0 and self.filter2 is not None:
+        if self.filter_config['land_bias'] != 0.0: #and self.filter2 is not None:
             self.refine_world()
 
         self.add_color()
@@ -60,12 +49,12 @@ class Noisemap:
         for i in range(self.height):
             for j in range(self.width):
                 #fill with noise
-                self.world[i][j] = noise.pnoise3(i/self.scale, 
-                                        j/self.scale, 
+                self.world[i][j] = noise.pnoise3(i/self.noise['scale'], 
+                                        j/self.noise['scale'], 
                                         SEED,
-                                        octaves = self.octaves, 
-                                        persistence = self.persistence, 
-                                        lacunarity = self.lacunarity, 
+                                        octaves = self.noise['octaves'], 
+                                        persistence = self.noise['persistence'], 
+                                        lacunarity = self.noise['lacunarity'], 
                                         repeatx= self.width, 
                                         repeaty= self.height, 
                                         base= 0)
@@ -86,7 +75,7 @@ class Noisemap:
         #Adds land bias and pre-set filter
         for i in range(self.height):
             for j in range(self.width):
-                self.world[i][j] = self.world[i][j] + self.land_bias #- ((filter2[i][j]) * filter2_bias)
+                self.world[i][j] = self.world[i][j] + self.filter_config['land_bias'] #- ((filter2[i][j]) * filter2_bias)
 
     def add_color(self):
         #Zone Colors
@@ -142,23 +131,3 @@ class Noisemap:
 
         # ##saves as PNG file with name: "map{SEED}" to specified directory
         img.save(SCRIPT_PATH + f"\\maps\\map{SEED}.png")
-
-class Filter:
-    def __init__(self, path, weight):
-        self.path = path
-        self.weight = weight
-        self.data = None
-        self.set_data()
-
-    def set_data(self):
-        ##load red value as grayscale ('g' or 'b' would work as well) 
-        img = Image.open(self.path, mode="r").convert('L')
-        ##save as array and divide by 255 to convert to range between 0 and 1
-        self.data = np.array(img) / 255
-
-#Filters
-f = Filter("filters/geography12.png", 0.67)
-
-if __name__ == "__main__":
-    nmap = Noisemap(WIDTH, HEIGHT, scale, octaves, persistence, lacunarity, f)
-    # print(nmap.get_stats())

@@ -1,78 +1,70 @@
-         2099265 function calls (2099206 primitive calls) in 5.844 seconds
+         2098658 function calls (2098641 primitive calls) in 6.147 seconds
 
    Ordered by: cumulative time
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-        1    0.000    0.000    5.756    5.756 c:\Users\Blair\Documents\Programming\lake-generator\mapGen.py:22(__init__)
-        1    0.001    0.001    5.756    5.756 c:\Users\Blair\Documents\Programming\lake-generator\mapGen.py:36(__main)
-        1    1.300    1.300    4.181    4.181 c:\Users\Blair\Documents\Programming\lake-generator\mapGen.py:55(make_noise)
-  2097152    2.881    0.000    2.881    0.000 {built-in method noise._perlin.noise3}
-        1    0.001    0.001    1.383    1.383 c:\Users\Blair\Documents\Programming\lake-generator\mapGen.py:132(image_output)
-        1    0.000    0.000    1.283    1.283 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:2182(show)
-        1    0.000    0.000    1.283    1.283 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:3152(_show)
-        1    0.000    0.000    1.283    1.283 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:3157(_showxv)
-        1    0.000    0.000    1.281    1.281 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:46(show)
-        1    0.000    0.000    1.281    1.281 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:66(show)
-        1    0.000    0.000    1.281    1.281 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:105(show_image)
-        1    0.000    0.000    1.220    1.220 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:109(show_file)
-        1    1.220    1.220    1.220    1.220 {built-in method nt.system}
-        2    0.000    0.000    0.147    0.073 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:2081(save)
-        2    0.000    0.000    0.146    0.073 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\PngImagePlugin.py:1132(_save)
-        2    0.000    0.000    0.146    0.073 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageFile.py:484(_save)
-        5    0.144    0.029    0.144    0.029 {method 'encode' of 'ImagingEncoder' objects}
-        1    0.134    0.134    0.134    0.134 c:\Users\Blair\Documents\Programming\lake-generator\mapGen.py:91(add_color)
-    24/23    0.062    0.003    0.102    0.004 {built-in method numpy.core._multiarray_umath.implement_array_function}
-        1    0.015    0.015    0.086    0.086 c:\Users\Blair\Documents\Programming\lake-generator\mapGen.py:116(get_stats)
-        2    0.000    0.000    0.062    0.031 <__array_function__ internals>:2(where)
+        1    0.000    0.000    6.135    6.135 c:\Users\Blair\Documents\Programming\lake-generator\mapGen.py:22(__init__)
+        1    0.001    0.001    6.135    6.135 c:\Users\Blair\Documents\Programming\lake-generator\mapGen.py:36(__main)
+        1    1.523    1.523    4.545    4.545 c:\Users\Blair\Documents\Programming\lake-generator\mapGen.py:55(make_noise)
+  2097152    3.022    0.000    3.022    0.000 {built-in method noise._perlin.noise3}
+        1    0.001    0.001    1.395    1.395 c:\Users\Blair\Documents\Programming\lake-generator\mapGen.py:132(image_output)
+        1    0.000    0.000    1.295    1.295 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:2182(show)
+        1    0.000    0.000    1.295    1.295 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:3152(_show)
+        1    0.000    0.000    1.295    1.295 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:3157(_showxv)
+        1    0.000    0.000    1.293    1.293 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:46(show)
+        1    0.000    0.000    1.293    1.293 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:66(show)
+        1    0.000    0.000    1.293    1.293 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:105(show_image)
+        1    0.000    0.000    1.232    1.232 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:109(show_file)
+        1    1.232    1.232    1.232    1.232 {built-in method nt.system}
+        2    0.000    0.000    0.146    0.073 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:2081(save)
+        2    0.000    0.000    0.145    0.073 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\PngImagePlugin.py:1132(_save)
+        2    0.000    0.000    0.145    0.073 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageFile.py:484(_save)
+        5    0.143    0.029    0.143    0.029 {method 'encode' of 'ImagingEncoder' objects}
+        1    0.137    0.137    0.137    0.137 c:\Users\Blair\Documents\Programming\lake-generator\mapGen.py:91(add_color)
         1    0.000    0.000    0.061    0.061 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:101(save_image)
         1    0.000    0.000    0.061    0.061 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:622(_dump)
         1    0.002    0.002    0.036    0.036 c:\Users\Blair\Documents\Programming\lake-generator\mapGen.py:78(interpolate)
+      8/7    0.000    0.000    0.031    0.004 {built-in method numpy.core._multiarray_umath.implement_array_function}
         1    0.000    0.000    0.031    0.031 <__array_function__ internals>:2(interp)
         1    0.000    0.000    0.031    0.031 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\lib\function_base.py:1289(interp)
         1    0.031    0.031    0.031    0.031 {built-in method numpy.core._multiarray_umath.interp}
-        1    0.020    0.020    0.020    0.020 c:\Users\Blair\Documents\Programming\lake-generator\mapGen.py:73(subtract_filter)
-       16    0.012    0.001    0.012    0.001 {method 'reduce' of 'numpy.ufunc' objects}
-       14    0.000    0.000    0.009    0.001 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\fromnumeric.py:70(_wrapreduction)
-        1    0.008    0.008    0.008    0.008 {method 'astype' of 'numpy.ndarray' objects}
+        1    0.021    0.021    0.021    0.021 c:\Users\Blair\Documents\Programming\lake-generator\mapGen.py:73(subtract_filter)
+        1    0.000    0.000    0.011    0.011 c:\Users\Blair\Documents\Programming\lake-generator\mapGen.py:116(get_stats)
+        1    0.007    0.007    0.007    0.007 {method 'astype' of 'numpy.ndarray' objects}
+        1    0.006    0.006    0.006    0.006 {method 'argmin' of 'numpy.ndarray' objects}
         1    0.000    0.000    0.005    0.005 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:2713(fromarray)
         1    0.000    0.000    0.005    0.005 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:2660(frombuffer)
         1    0.000    0.000    0.005    0.005 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:2616(frombytes)
-        7    0.000    0.000    0.005    0.001 <__array_function__ internals>:2(amin)
-        7    0.000    0.000    0.005    0.001 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\fromnumeric.py:2714(amin)
-        7    0.000    0.000    0.004    0.001 <__array_function__ internals>:2(amax)
-        7    0.000    0.000    0.004    0.001 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\fromnumeric.py:2589(amax)
+        1    0.005    0.005    0.005    0.005 {method 'argmax' of 'numpy.ndarray' objects}
         1    0.000    0.000    0.004    0.004 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:2577(new)
         1    0.004    0.004    0.004    0.004 {built-in method PIL._imaging.fill}
+        6    0.004    0.001    0.004    0.001 {method 'reduce' of 'numpy.ufunc' objects}
       4/2    0.000    0.000    0.002    0.001 <frozen importlib._bootstrap>:1017(_handle_fromlist)
       3/1    0.000    0.000    0.002    0.002 <frozen importlib._bootstrap>:211(_call_with_frames_removed)
         1    0.000    0.000    0.002    0.002 {built-in method builtins.__import__}
       2/1    0.000    0.000    0.002    0.002 <frozen importlib._bootstrap>:986(_find_and_load)
       2/1    0.000    0.000    0.002    0.002 <frozen importlib._bootstrap>:956(_find_and_load_unlocked)
+        9    0.000    0.000    0.002    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\PngImagePlugin.py:970(putchunk)
+        5    0.000    0.000    0.002    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\PngImagePlugin.py:988(write)
         1    0.000    0.000    0.002    0.002 {method 'min' of 'numpy.ndarray' objects}
         1    0.000    0.000    0.002    0.002 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\_methods.py:41(_amin)
-        1    0.001    0.001    0.002    0.002 {built-in method builtins.print}
       2/1    0.000    0.000    0.002    0.002 <frozen importlib._bootstrap>:650(_load_unlocked)
-        1    0.000    0.000    0.002    0.002 {method 'max' of 'numpy.ndarray' objects}
-        9    0.000    0.000    0.002    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\PngImagePlugin.py:970(putchunk)
-        1    0.000    0.000    0.002    0.002 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\_methods.py:37(_amax)
       2/1    0.000    0.000    0.002    0.002 <frozen importlib._bootstrap_external>:777(exec_module)
-        5    0.000    0.000    0.002    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\PngImagePlugin.py:988(write)
+       29    0.002    0.000    0.002    0.000 {method 'write' of '_io.BufferedRandom' objects}
+        1    0.000    0.000    0.002    0.002 {method 'max' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.002    0.002 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\_methods.py:37(_amax)
         1    0.000    0.000    0.001    0.001 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:779(frombytes)
-       29    0.001    0.000    0.001    0.000 {method 'write' of '_io.BufferedRandom' objects}
         1    0.001    0.001    0.001    0.001 {method 'decode' of 'ImagingDecoder' objects}
         2    0.000    0.000    0.001    0.001 <frozen importlib._bootstrap_external>:849(get_code)
       2/1    0.000    0.000    0.001    0.001 {built-in method builtins.exec}
         1    0.000    0.000    0.001    0.001 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:14(<module>)
         1    0.000    0.000    0.001    0.001 C:\Python38\lib\tempfile.py:295(mkstemp)
-        6    0.000    0.000    0.001    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:1365(_array_repr_implementation)
+        1    0.001    0.001    0.001    0.001 {built-in method builtins.print}
         2    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:969(get_data)
-        6    0.000    0.000    0.001    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:516(array2string)
         2    0.001    0.000    0.001    0.000 {built-in method io.open_code}
         1    0.000    0.000    0.001    0.001 C:\Python38\lib\tempfile.py:105(_sanitize_params)
         1    0.000    0.000    0.001    0.001 C:\Python38\lib\tempfile.py:279(gettempdir)
         1    0.000    0.000    0.001    0.001 C:\Python38\lib\tempfile.py:177(_get_default_tempdir)
-        6    0.000    0.000    0.001    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:461(wrapper)
-        6    0.000    0.000    0.001    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:478(_array2string)
         3    0.001    0.000    0.001    0.000 {built-in method io.open}
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:890(_find_spec)
         2    0.000    0.000    0.000    0.000 {built-in method nt.open}
@@ -81,250 +73,262 @@
         4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1431(find_spec)
         8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:80(_path_stat)
         8    0.000    0.000    0.000    0.000 {built-in method nt.stat}
-        2    0.000    0.000    0.000    0.000 {method 'close' of '_io.BufferedRandom' objects}
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:1365(_array_repr_implementation)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:516(array2string)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:461(wrapper)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:478(_array2string)
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\tempfile.py:238(_mkstemp_inner)
        18    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\PngImagePlugin.py:104(_crc32)
-        6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:409(_get_format_function)
+        2    0.000    0.000    0.000    0.000 {method 'close' of '_io.BufferedRandom' objects}
        18    0.000    0.000    0.000    0.000 {built-in method zlib.crc32}
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:409(_get_format_function)
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\shlex.py:1(<module>)
-        6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:365(<lambda>)
-        6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:709(_formatArray)
-        6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:1124(__init__)
-     42/6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:718(recurser)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:366(<lambda>)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:836(__init__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:863(fillFormat)
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\re.py:250(compile)
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\re.py:289(_compile)
         2    0.000    0.000    0.000    0.000 {built-in method numpy.zeros}
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_compile.py:759(compile)
         1    0.000    0.000    0.000    0.000 {built-in method nt.unlink}
-        2    0.000    0.000    0.000    0.000 {built-in method builtins.next}
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:578(_compile_bytecode)
-        2    0.000    0.000    0.000    0.000 C:\Python38\lib\tempfile.py:144(__next__)
         2    0.000    0.000    0.000    0.000 {built-in method marshal.loads}
-        6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:1340(dtype_short_repr)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.next}
         8    0.000    0.000    0.000    0.000 {built-in method builtins.__build_class__}
-     18/6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:324(_leading_trailing)
+        2    0.000    0.000    0.000    0.000 C:\Python38\lib\tempfile.py:144(__next__)
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:99(_path_isfile)
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:90(_path_is_mode_type)
+        2    0.000    0.000    0.000    0.000 {built-in method nt.close}
         2    0.000    0.000    0.000    0.000 {method 'read' of '_io.BufferedReader' objects}
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1010(path_stats)
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:937(parse)
-        2    0.000    0.000    0.000    0.000 {built-in method nt.close}
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:709(_formatArray)
+      8/2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:718(recurser)
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:549(module_from_spec)
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_compile.py:598(_code)
-        6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\_dtype.py:321(_name_get)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:477(_init_module_attrs)
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:435(_parse_sub)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:477(_init_module_attrs)
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:493(_parse)
+        2    0.000    0.000    0.000    0.000 <__array_function__ internals>:2(unravel_index)
         2    0.000    0.000    0.000    0.000 C:\Python38\lib\tempfile.py:133(rng)
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\tempfile.py:150(_candidate_tempdir_list)
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:493(_parse)
-        6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:60(_make_options_dict)
-        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:294(cache_from_source)
-       42    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:695(_extendLine)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:147(__enter__)
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_compile.py:536(_compile_info)
-        2    0.000    0.000    0.000    0.000 C:\Python38\lib\tempfile.py:147(<listcomp>)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:294(cache_from_source)
        20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:62(_path_join)
-        6    0.000    0.000    0.000    0.000 <__array_function__ internals>:2(concatenate)
-  377/376    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:147(__enter__)
         4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:376(cached)
         2    0.000    0.000    0.000    0.000 C:\Python38\lib\ntpath.py:524(abspath)
-       16    0.000    0.000    0.000    0.000 C:\Python38\lib\random.py:285(choice)
-        6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\_dtype.py:307(_name_includes_bit_suffix)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:424(_get_cached)
+        2    0.000    0.000    0.000    0.000 C:\Python38\lib\tempfile.py:147(<listcomp>)
        22    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\_binary.py:91(o32be)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:424(_get_cached)
         2    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_compile.py:276(_optimize_charset)
-        2    0.000    0.000    0.000    0.000 C:\Python38\lib\random.py:94(__init__)
+       16    0.000    0.000    0.000    0.000 C:\Python38\lib\random.py:285(choice)
+        4    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\fromnumeric.py:70(_wrapreduction)
+        2    0.000    0.000    0.000    0.000 <__array_function__ internals>:2(amax)
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:157(_get_module_lock)
-        2    0.000    0.000    0.000    0.000 {method 'flush' of '_io.BufferedRandom' objects}
+        8    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:918(<genexpr>)
         2    0.000    0.000    0.000    0.000 C:\Python38\lib\ntpath.py:450(normpath)
-        2    0.000    0.000    0.000    0.000 C:\Python38\lib\random.py:123(seed)
+        2    0.000    0.000    0.000    0.000 C:\Python38\lib\random.py:94(__init__)
+        6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:947(__call__)
         1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:290(getmodebase)
+        2    0.000    0.000    0.000    0.000 C:\Python38\lib\random.py:123(seed)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\fromnumeric.py:2589(amax)
         1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageMode.py:33(getmode)
-        6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\numerictypes.py:360(issubdtype)
-        6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:358(_get_formatdict)
-       16    0.000    0.000    0.000    0.000 C:\Python38\lib\random.py:250(_randbelow_with_getrandbits)
+        4    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\_ufunc_config.py:32(seterr)
         2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:442(_getencoder)
         2    0.000    0.000    0.000    0.000 C:\Python38\lib\ntpath.py:203(splitext)
+        2    0.000    0.000    0.000    0.000 {method 'flush' of '_io.BufferedRandom' objects}
+        8    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:913(<genexpr>)
+  149/148    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       12    0.000    0.000    0.000    0.000 {built-in method numpy.core._multiarray_umath.dragon4_positional}
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\_ufunc_config.py:433(__enter__)
        20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:64(<listcomp>)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:58(__init__)
-        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:419(_getdecoder)
+       10    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+       16    0.000    0.000    0.000    0.000 C:\Python38\lib\random.py:250(_randbelow_with_getrandbits)
         2    0.000    0.000    0.000    0.000 C:\Python38\lib\ntpath.py:77(join)
-        5    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:810(load)
+        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:419(_getdecoder)
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_compile.py:71(_compile)
+        5    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:810(load)
+        2    0.000    0.000    0.000    0.000 {function Random.seed at 0x000001A1789F5310}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:58(__init__)
        22    0.000    0.000    0.000    0.000 {built-in method _struct.pack}
-        2    0.000    0.000    0.000    0.000 {function Random.seed at 0x000001701BEB4310}
-       36    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:1132(__call__)
-       12    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\numerictypes.py:286(issubclass_)
-        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:68(_path_split)
-       20    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
-        3    0.000    0.000    0.000    0.000 C:\Python38\lib\os.py:766(getenv)
-        7    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\_asarray.py:14(asarray)
-        6    0.000    0.000    0.000    0.000 C:\Python38\lib\os.py:670(__getitem__)
-       18    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:60(_make_options_dict)
         6    0.000    0.000    0.000    0.000 C:\Python38\lib\ntpath.py:124(splitdrive)
-       69    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1426(_get_spec)
-        4    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
         2    0.000    0.000    0.000    0.000 C:\Python38\lib\genericpath.py:121(_splitext)
-       50    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
-        3    0.000    0.000    0.000    0.000 C:\Python38\lib\_collections_abc.py:657(get)
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:68(_path_split)
+       18    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        6    0.000    0.000    0.000    0.000 C:\Python38\lib\os.py:670(__getitem__)
+        2    0.000    0.000    0.000    0.000 <__array_function__ internals>:2(amin)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1426(_get_spec)
+        3    0.000    0.000    0.000    0.000 C:\Python38\lib\os.py:766(getenv)
+       59    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
         2    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_compile.py:411(_mk_bitmap)
-       16    0.000    0.000    0.000    0.000 {built-in method builtins.max}
-        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:555(_new)
-       17    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\ntpath.py:289(expanduser)
-        6    0.000    0.000    0.000    0.000 {built-in method builtins.locals}
-        7    0.000    0.000    0.000    0.000 {built-in method numpy.array}
-        6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:1304(dtype_is_implied)
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\ntpath.py:337(expandvars)
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:493(_classify_pyc)
+        4    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+       17    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+        3    0.000    0.000    0.000    0.000 C:\Python38\lib\_collections_abc.py:657(get)
+        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:555(_new)
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\ntpath.py:289(expanduser)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\fromnumeric.py:2714(amin)
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\ntpath.py:337(expandvars)
+        3    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\_asarray.py:14(asarray)
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:629(spec_from_file_location)
-        6    0.000    0.000    0.000    0.000 C:\Python38\lib\os.py:740(encodekey)
-       12    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\lib\index_tricks.py:727(__getitem__)
        11    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:254(get)
+        3    0.000    0.000    0.000    0.000 {built-in method numpy.array}
+        6    0.000    0.000    0.000    0.000 C:\Python38\lib\os.py:740(encodekey)
         2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:616(_ensure_mutable)
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\enum.py:833(__and__)
         6    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:51(_unpack_uint32)
-       14    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\fromnumeric.py:71(<dictcomp>)
+        6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:695(_extendLine)
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\enum.py:833(__and__)
         4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:389(parent)
+        4    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\_ufunc_config.py:132(geterr)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\_ufunc_config.py:438(__exit__)
         1    0.000    0.000    0.000    0.000 <__array_function__ internals>:2(iscomplexobj)
-       12    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
-       22    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:222(_verbose_message)
-       24    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageMode.py:23(__init__)
        28    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:78(acquire)
-        2    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.zip_encoder}
-       50    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
        14    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:233(__next)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:1304(dtype_is_implied)
+       24    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageMode.py:23(__init__)
+        2    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.zip_encoder}
+       22    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:222(_verbose_message)
+        2    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_compile.py:249(_compile_charset)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:78(acquire)
         9    0.000    0.000    0.000    0.000 {method 'join' of 'bytes' objects}
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:151(__exit__)
-        2    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_compile.py:249(_compile_charset)
-        2    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_compile.py:413(<listcomp>)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:526(_validate_timestamp_pyc)
        33    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_compile.py:413(<listcomp>)
+       46    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:526(_validate_timestamp_pyc)
        15    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
-        6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:65(<dictcomp>)
-        3    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:2559(_check_size)
-        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\_util.py:10(isPath)
-        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:530(__init__)
-       32    0.000    0.000    0.000    0.000 {method 'getrandbits' of '_random.Random' objects}
-        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\lib\type_check.py:279(iscomplexobj)
-       22    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
        44    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:103(release)
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:174(getwidth)
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:432(_uniq)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\_util.py:10(isPath)
+        3    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:2559(_check_size)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.locals}
         5    0.000    0.000    0.000    0.000 {method 'pixel_access' of 'ImagingCore' objects}
-        2    0.000    0.000    0.000    0.000 {method 'setimage' of 'ImagingEncoder' objects}
-        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\__init__.py:38(__getattr__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:358(_get_formatdict)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:530(__init__)
         2    0.000    0.000    0.000    0.000 C:\Python38\lib\enum.py:283(__call__)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:103(release)
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:725(find_spec)
+        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\lib\type_check.py:279(iscomplexobj)
+       25    0.000    0.000    0.000    0.000 {method 'getrandbits' of '_random.Random' objects}
         8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:867(__exit__)
-       20    0.000    0.000    0.000    0.000 {built-in method nt.fspath}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:176(cb)
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:224(__init__)
-        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:863(__enter__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\__init__.py:38(__getattr__)
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:432(_uniq)
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:174(getwidth)
         2    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
        11    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:249(match)
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:863(__enter__)
+        2    0.000    0.000    0.000    0.000 {method 'setimage' of 'ImagingEncoder' objects}
+       20    0.000    0.000    0.000    0.000 {built-in method nt.fspath}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:176(cb)
+        8    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
         6    0.000    0.000    0.000    0.000 C:\Python38\lib\os.py:734(check_str)
+        4    0.000    0.000    0.000    0.000 {built-in method numpy.seterrobj}
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:224(__init__)
         1    0.000    0.000    0.000    0.000 {built-in method PIL._imaging.raw_decoder}
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\tempfile.py:224(_get_candidate_names)
-       10    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
-        6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\_dtype.py:24(_kind_name)
-        2    0.000    0.000    0.000    0.000 {built-in method nt._getfullpathname}
-        6    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:800(find_spec)
-        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1265(_path_importer_cache)
-       10    0.000    0.000    0.000    0.000 {method 'find' of 'bytearray' objects}
+        6    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        8    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:922(<genexpr>)
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\shlex.py:19(shlex)
-        7    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
-        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:36(_relax_case)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:456(_check_name_wrapper)
-        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\PngImagePlugin.py:984(__init__)
-        4    0.000    0.000    0.000    0.000 {method 'rsplit' of 'str' objects}
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\_collections_abc.py:664(__contains__)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:800(find_spec)
         8    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:551(size)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:35(_new_module)
-        1    0.000    0.000    0.000    0.000 {built-in method nt.getcwd}
-        5    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+       10    0.000    0.000    0.000    0.000 {method 'find' of 'bytearray' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method nt._getfullpathname}
+        5    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1265(_path_importer_cache)
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\_collections_abc.py:664(__contains__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\PngImagePlugin.py:984(__init__)
        12    0.000    0.000    0.000    0.000 {built-in method _imp.acquire_lock}
+       10    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
         1    0.000    0.000    0.000    0.000 {built-in method _imp.is_builtin}
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\types.py:171(__get__)
-        1    0.000    0.000    0.000    0.000 {method 'setimage' of 'ImagingDecoder' objects}
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:295(_class_escape)
-        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:124(get_command)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:456(_check_name_wrapper)
+        4    0.000    0.000    0.000    0.000 {method 'rsplit' of 'str' objects}
+        5    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:36(_relax_case)
+        1    0.000    0.000    0.000    0.000 {built-in method nt.getcwd}
+        2    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+        8    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:923(<genexpr>)
        10    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
-        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:61(Viewer)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:342(__init__)
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_compile.py:461(_get_literal_prefix)
-        7    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\fromnumeric.py:2584(_amax_dispatcher)
-        1    0.000    0.000    0.000    0.000 {built-in method fromkeys}
-        6    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
-        6    0.000    0.000    0.000    0.000 {method 'discard' of 'set' objects}
-        6    0.000    0.000    0.000    0.000 {built-in method builtins.id}
-       12    0.000    0.000    0.000    0.000 {built-in method _imp.release_lock}
-        6    0.000    0.000    0.000    0.000 {built-in method from_bytes}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:35(_new_module)
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:295(_class_escape)
+        4    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\fromnumeric.py:71(<dictcomp>)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:65(<dictcomp>)
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\tempfile.py:224(_get_candidate_names)
         2    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
-        6    0.000    0.000    0.000    0.000 {method 'isalpha' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_compile.py:461(_get_literal_prefix)
+        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:124(get_command)
+       12    0.000    0.000    0.000    0.000 {built-in method _imp.release_lock}
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\types.py:171(__get__)
+        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:61(Viewer)
+        8    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        6    0.000    0.000    0.000    0.000 {built-in method from_bytes}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:342(__init__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\_virtualenv.py:54(find_spec)
         2    0.000    0.000    0.000    0.000 C:\Python38\lib\enum.py:562(__new__)
         1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:26(register)
-        2    0.000    0.000    0.000    0.000 {method 'cleanup' of 'ImagingEncoder' objects}
-        6    0.000    0.000    0.000    0.000 {method 'isalnum' of 'str' objects}
-        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
-        2    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_compile.py:595(isstring)
-        7    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\fromnumeric.py:2709(_amin_dispatcher)
-       16    0.000    0.000    0.000    0.000 {method 'bit_length' of 'int' objects}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:143(__init__)
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:76(__init__)
-        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:347(preinit)
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\tempfile.py:84(_infer_return_type)
         1    0.000    0.000    0.000    0.000 {built-in method _sre.compile}
-        2    0.000    0.000    0.000    0.000 {built-in method nt.getpid}
-        2    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
-        9    0.000    0.000    0.000    0.000 {built-in method builtins.ord}
-        2    0.000    0.000    0.000    0.000 {built-in method _imp.is_frozen}
-        2    0.000    0.000    0.000    0.000 {built-in method _imp._fix_co_filename}
-        2    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:286(tell)
-        6    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\multiarray.py:143(concatenate)
+        1    0.000    0.000    0.000    0.000 {built-in method fromkeys}
+        3    0.000    0.000    0.000    0.000 {method 'copy' of 'dict' objects}
+       16    0.000    0.000    0.000    0.000 {method 'bit_length' of 'int' objects}
         8    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:939(__init__)
-        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\multiarray.py:311(where)
-        4    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
-        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\_virtualenv.py:54(find_spec)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\multiarray.py:990(unravel_index)
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\tempfile.py:84(_infer_return_type)
+        6    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        2    0.000    0.000    0.000    0.000 {built-in method _imp._fix_co_filename}
+        8    0.000    0.000    0.000    0.000 {built-in method numpy.geterrobj}
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_compile.py:492(_get_charset_prefix)
+        2    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:286(tell)
+        1    0.000    0.000    0.000    0.000 {method 'setimage' of 'ImagingDecoder' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method _imp.is_frozen}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:143(__init__)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:939(__init__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\_ufunc_config.py:429(__init__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\Image.py:347(preinit)
+        2    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        9    0.000    0.000    0.000    0.000 {built-in method builtins.ord}
+        2    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_compile.py:595(isstring)
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:76(__init__)
+        4    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:921(fix_flags)
+        2    0.000    0.000    0.000    0.000 {method 'cleanup' of 'ImagingEncoder' objects}
         3    0.000    0.000    0.000    0.000 {built-in method builtins.min}
-        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:118(WindowsViewer)
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\ntpath.py:34(_get_bothseps)
+        2    0.000    0.000    0.000    0.000 {built-in method nt.getpid}
         2    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:81(groups)
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:164(__getitem__)
-        2    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.lock' objects}
-        2    0.000    0.000    0.000    0.000 {method 'translate' of 'bytearray' objects}
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:111(__init__)
-        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:170(UnixViewer)
-        2    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
-        1    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\enum.py:664(value)
+        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:118(WindowsViewer)
+        2    0.000    0.000    0.000    0.000 {method 'translate' of 'bytearray' objects}
+        2    0.000    0.000    0.000    0.000 {method 'discard' of 'set' objects}
         1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:172(append)
         2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageFile.py:77(_tilesort)
-        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:192(DisplayViewer)
-        3    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
-        2    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
-        1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:160(__len__)
         1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:136(MacViewer)
-        2    0.000    0.000    0.000    0.000 {method 'release' of '_thread.lock' objects}
-        1    0.000    0.000    0.000    0.000 {method 'write' of '_io.BufferedWriter' objects}
-        1    0.000    0.000    0.000    0.000 {method 'index' of 'str' objects}
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:397(has_location)
-        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:964(get_filename)
+        2    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.lock' objects}
+        2    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\ntpath.py:34(_get_bothseps)
         2    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_compile.py:453(_get_iscased)
-        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:208(XVViewer)
+        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:170(UnixViewer)
+        2    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
         2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:774(create_module)
-        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\lib\function_base.py:1285(_interp_dispatcher)
-        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:200(EogViewer)
-        1    0.000    0.000    0.000    0.000 {method 'insert' of 'list' objects}
-        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:90(get_format)
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\sre_parse.py:160(__len__)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\arrayprint.py:827(_none_or_positive_arg)
+        1    0.000    0.000    0.000    0.000 {method 'write' of '_io.BufferedWriter' objects}
+        3    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        2    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 {method 'index' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.setattr}
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:397(has_location)
+        1    0.000    0.000    0.000    0.000 C:\Python38\lib\enum.py:664(value)
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\fromnumeric.py:2584(_amax_dispatcher)
         1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\lib\type_check.py:206(_is_type_dispatcher)
+        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:208(XVViewer)
+        2    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:964(get_filename)
+        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:192(DisplayViewer)
+        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:200(EogViewer)
+        2    0.000    0.000    0.000    0.000 {method 'release' of '_thread.lock' objects}
+        1    0.000    0.000    0.000    0.000 {method 'insert' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        2    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\core\fromnumeric.py:2709(_amin_dispatcher)
+        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\numpy\lib\function_base.py:1285(_interp_dispatcher)
+        1    0.000    0.000    0.000    0.000 C:\Users\Blair\Documents\Programming\python-environments\noisemap\lib\site-packages\PIL\ImageShow.py:90(get_format)
         1    0.000    0.000    0.000    0.000 {built-in method sys.audit}
 
 
