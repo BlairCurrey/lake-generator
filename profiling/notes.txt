@@ -1,0 +1,33 @@
+profile-results-0.txt
+Baseline. These are the results of the program after refactoring into classes (but not changing functions calls)
+Biggest offender is pnoise function in make_noise. Called 8388608 times. Width/Height were 2048 and 1024 at the time.
+We were traversing each position and then generating more noise and adding it to each position 4 times. So from this alone,
+we have 2048x1024x3 = 8,388,608 calls. Removing it does't seem to effect the outcome very much. It was originally used (I believe)
+to get more natural boundaries and did have some effect. Might be interesting to test what generating and adding 1 more noise 
+value would do (instead of doing it 3 times in a for loop). cumulative time is 50 seconds
+
+profile-result-1.txt
+removed the second round of noise generation. Now noise function is called 2048x1024=2,097,152 which matches the profiler result.
+reduced total time for noise function calls from 12.976 seconds to 2.429. cumulative time is 15 seconds
+
+
+profile-result-2.txt
+Added the second round of noise generation back but reduced to 2 passes. noise is called 2048x1024x2=4,194,304 times which matches 
+the profiler result. total time of noise calls is 7.714. entire program cumulative time is 29.613.
+
+profile-result-3.txt
+Same as profile-result-1.txt (no second wave of perlin noise) and implemented a check for land bias and filter2 inclusion.
+Saves another time looping through the matrix if those settings or default (0.0, none)
+
+profile-result-4.txt
+Same as profile-result-3.txt (no second wave of perlin noise, doesn't implement empty landbias/filter2) and changed how colors are drawn.
+instead of looping through each pixel, they are accessed with boolean indexing, like so:
+colored_world[self.world < 0.28] = water_deep
+colored_world[np.logical_and(self.world >= 0.28, self.world < 0.38)] = water_medium
+etc.
+This practically eliminated the 4 seconds the add_color function took to run previously (now .133).
+
+profile-result-4.txt
+Same as profile-result-4.txt (no second wave of perlin noise, doesn't implement empty landbias/filter2, boolean index in add_color)
+and took filter pixel by pixel subtraction out of make_noise. Instead I use the np.subtraction() to just subtract the filter
+directly from the world array. Takes us from 3.933 to 1.339 seconds runtime for make_noise
