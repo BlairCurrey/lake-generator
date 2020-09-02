@@ -1,13 +1,9 @@
 import Noisemap
-from Noisemap import Noisemap
-from Filter import Filter
-from configreader import Config
-
-# Image Dimensions
-WIDTH = 2048
-HEIGHT = 1024
-CONFIG = Config()
+from noisemap import noisemap
+from filter_ import filter_
+from config import config
 
 if __name__ == "__main__":
-    nmap = Noisemap(WIDTH, HEIGHT, CONFIG)
-    # nmap.get_stats()
+    SETTINGS = config()
+    LAKE = noisemap(SETTINGS)
+    print(LAKE.get_stats())

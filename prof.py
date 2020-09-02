@@ -2,18 +2,19 @@ import cProfile
 import pstats
 import io
 import os
-from mapGen import *
+from noisemap import noisemap
+from config import config
 
 pr = cProfile.Profile()
 pr.enable()
-
-nmap = Noisemap(width, height, scale, octaves, persistence, lacunarity, f)
-print(nmap.get_stats())
-
+####
+SETTINGS = config()
+LAKE = noisemap(SETTINGS)
+###
 pr.disable()
 s = io.StringIO()
 ps = pstats.Stats(pr, stream=s).sort_stats('cumtime')
 ps.print_stats()
 
-with open('profiling/profile-results.txt', 'w+') as f:
+with open('profiling/profile-result.txt', 'w+') as f:
     f.write(s.getvalue())

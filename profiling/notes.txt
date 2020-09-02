@@ -27,7 +27,14 @@ colored_world[np.logical_and(self.world >= 0.28, self.world < 0.38)] = water_med
 etc.
 This practically eliminated the 4 seconds the add_color function took to run previously (now .133).
 
-profile-result-4.txt
+profile-result-5.txt
 Same as profile-result-4.txt (no second wave of perlin noise, doesn't implement empty landbias/filter2, boolean index in add_color)
 and took filter pixel by pixel subtraction out of make_noise. Instead I use the np.subtraction() to just subtract the filter
 directly from the world array. Takes us from 3.933 to 1.339 seconds runtime for make_noise
+
+profile-result-6.txt
+Same as profile-result-5.txt but with the land bias option set (refine_world function). This passes through the image after it 
+is created and adds an amount. Current implementation loops through every index. tottime = 1.585 , cumtime 8.032    
+
+profile-result-7.txt
+Same as profile-result-6.txt but changes to boolean indexing for adding the land bias
