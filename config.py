@@ -2,14 +2,14 @@ from configparser import ConfigParser
 import os
 import random as rand
 
-class config:
+class Config:
     
     CONFIG_FILE = 'config.ini'
     IMG = {'x': 2048, 'y': 1024}
     SEED = rand.randint(1,100000)
 
     def __init__(self):
-        self.parser  = ConfigParser()
+        self.parser = ConfigParser()
         self.img = self.IMG
         self.seed = self.SEED
         self.noise = {}
@@ -36,6 +36,10 @@ class config:
         f = rand.choice(os.listdir("filters\\"))
         return "filters\\" + f
 
+    def save_to(self, path):
+        with open(f'{path}', 'w') as f:
+            self.parser.write(f)
+
 if __name__ == "__main__":
-    c = config()
+    c = Config()
     print(c.img)
