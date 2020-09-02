@@ -2,14 +2,14 @@ import cProfile
 import pstats
 import io
 import os
-from noisemap import noisemap
-from config import config
+from Noisemap import Noisemap
+from Config import Config
 
 pr = cProfile.Profile()
 pr.enable()
 ####
-SETTINGS = config()
-LAKE = noisemap(SETTINGS)
+SETTINGS = Config()
+Noisemap(SETTINGS)
 ###
 pr.disable()
 s = io.StringIO()
