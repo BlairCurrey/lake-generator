@@ -1,20 +1,22 @@
-import os
+from pathlib import Path
 import numpy as np
 import noise
+from datetime import datetime
 import json
 
 from PIL import Image
 from Filter import Filter
 
-SCRIPT_PATH = (os.path.dirname(os.path.abspath(__file__)))
+PATH = Path('.').absolute()
 
 class Noisemap:
     def __init__(self, settings):
         self.settings = settings
         self.filter = None
         self.load_filter(settings.filters)
-        self.world = None
+        self.world = None #world could be a new class, group with img
         self.colored_world = None
+        self.color_img = None
         self.__main(settings.filters)
 
     def load_filter(self, filter_settings):
@@ -23,7 +25,7 @@ class Noisemap:
     def __main(self, filter_settings):
         # Make initial world filled with noise layers and pre-set filter
         # Values are constrained around 0 (typically between -0.3 and 0.3)
-        self.make_noise()
+        self.get_noise()
 
         if self.filter is not None:
             self.subtract_filter(self.filter)
@@ -36,13 +38,18 @@ class Noisemap:
         if self.settings.filters['land_bias'] != 0.0: #and self.filter_2 is not None:
             self.add_bias_and_filter()
 
-        # add color and save
+        # add color and make image
         self.add_color()
-        img = self.make_img_color()
-        img.show()
-        self.save_img(img)
+        self.color_img = self.get_color_img(self.colored_world)
+        
+        if self.settings.output['show']: 
+            self.color_img.show()
 
-    def make_noise(self, filter_arr=None, filter_obj=None):
+        save_config = self.settings.output['save_config']
+        save_stats = self.settings.output['save_stats']
+        self.save(save_config, save_stats)
+
+    def get_noise(self, filter_arr=None, filter_obj=None):
         #Create empty array
         height = self.settings.img['y']
         width = self.settings.img['x']
@@ -122,23 +129,32 @@ class Noisemap:
         }
         return stats
 
-    def make_img_color(self):
-        return Image.fromarray((self.colored_world).astype('uint8'), 'RGB')
+    def get_color_img(self, colored_world):
+        """colored_world needs to be array of [R, G, B] values"""
+        return Image.fromarray((colored_world).astype('uint8'), 'RGB')
 
-    def make_img_gray(self):
-        return Image.fromarray(np.uint8(self.world * 255) , 'L')
+    def get_img_gray(self, world):
+        """world needs array of float values"""
+        return Image.fromarray(np.uint8(world * 255) , 'L')
 
-    def save_img(self, img):
-        # saves {SEED}PNG, {SEED}-config.ini and {SEED}-stat.json file 
-        # to specified directory
-        dir_ = SCRIPT_PATH + f"\\maps\\map{self.settings.seed}"
-        if not os.path.exists(dir_):
-            os.makedirs(dir_)
+    def save(self, save_config=True, save_stats=True):
+        p = self.get_save_path()
 
-        img.save(dir_ + f"\\{self.settings.seed}.png")
-        self.settings.save_to(dir_ + f"\\{self.settings.seed}-config.ini")
-        self.save_json(dir_)
+        self.color_img.save(p / f"{self.settings.seed}.png")
+        if save_config: 
+            self.settings.save_to(p / f"{self.settings.seed}-config.ini")
+        if save_stats: 
+            with open(p / f"{self.settings.seed}-stats.json", 'w') as fp:
+                json.dump(self.get_stats(), fp, indent=4)
 
-    def save_json(self, path):
-        with open(f'{path}\\{self.settings.seed}-stats.json', 'w') as fp:
-            json.dump(self.get_stats(), fp, indent=4)
+    def get_save_path(self):
+        t = datetime.now().strftime("%Y_%m%d_%H%M%S")
+        p = PATH / self.settings.output['dir'] / f'map{t}'
+
+        if not p.exists(): 
+            p.mkdir(parents=True)
+
+        return p
+
+if __name__ == "__main__":
+    pass
