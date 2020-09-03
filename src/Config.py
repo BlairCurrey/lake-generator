@@ -4,19 +4,14 @@ from pathlib import Path
 import random as rand
 
 """
-Description of available settings in `config.ini`:
-        [dir]:          directory related settings
-        map_output:     relative path to output images to
-        filters:        
-
+Description of available settings in `config.ini`:     
         [noise]         noise related settings
         scale:
         octaves:
         persistence:
         lacunarity:
 
-        [filters]       filter and post-processing settings
-
+        [filters]
         land_bias:      Float number that adjusts how much land there is. Can 
                         be set to negative to decrease amount of land. Defaults 
                         to 0.0. Recommended range is -0.25 to 0.25
@@ -36,8 +31,18 @@ Description of available settings in `config.ini`:
                         opened after the program is run.
         dir:            Name of file or path relative to the root directory for
                         saving outputs. Default is maps.
+        save_color_img:
+                        Defaults to True. Controls whether or not the color 
+                        image derived from the height image is saved to the
+                        directory defined here.
+        save_height_img:
+                        Defaults to True. Controls whether or not the height 
+                        image that is generated from noise is saved to the
+                        directory defined here.
+
         save_config:    True (default) or False. Controls whether or not the
                         .ini config is saved after the program runs
+
         save_stats:     True (default) or False. Controls whether or not the
                         .json stats file is saved after the program runs
 """
@@ -47,6 +52,8 @@ class Config:
     CONFIG_FILE = 'src/config.ini'
     IMG = {'x': 2048, 'y': 1024}
     SEED = rand.randint(1,100000)
+    ELEVATION = 840
+    ELEVATION_UNIT = "ft"
 
     def __init__(self):
         self.parser = ConfigParser()
@@ -76,6 +83,8 @@ class Config:
         # output
         self.output['show'] = self.parser.getboolean('output', 'show', fallback=True)
         self.output['dir'] = self.parser.get('output', 'dir', fallback="maps")
+        self.output['save_color_img'] = self.parser.getboolean('output', 'save_color_img', fallback=True)
+        self.output['save_height_img'] = self.parser.getboolean('output', 'save_height_img', fallback=True)
         self.output['save_config'] = self.parser.getboolean('output', 'save_config', fallback=True)
         self.output['save_stats'] = self.parser.getboolean('output', 'save_stats', fallback=True)
 
