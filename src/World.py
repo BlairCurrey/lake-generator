@@ -6,6 +6,7 @@ import json
 
 from PIL import Image
 from Filter import Filter
+from Stats import Stats
 
 PATH = Path('.').absolute()
 
@@ -14,7 +15,7 @@ class World:
         self.config = config
         self.height_matrix = self.__get_height_matrix()
         self.height_img = self.__get_height_img()
-        self.stats = self.__get_stats()
+        self.stats = Stats(self.height_matrix)
         self.rgb_matrix = self.__get_rgb_matrix()
         self.color_img = self.__get_color_img()
 
@@ -78,23 +79,6 @@ class World:
 
         return constrained_matrix
 
-    def __get_stats(self):
-        matrix = self.height_matrix # shorten
-        min_ = np.unravel_index(matrix.argmin(), matrix.shape)
-        max_ = np.unravel_index(matrix.argmax(), matrix.shape)
-
-        stats = {
-            'min': {
-                'value': matrix[min_[0]][min_[1]],
-                'location': str(min_)
-            },
-            'max': {
-                'value': matrix[max_[0]][max_[1]],
-                'location': str(max_)
-            }
-        }
-        return stats
-
     def __get_rgb_matrix(self):
         #Zone Colors
         water_deep = [50,50,135]
@@ -137,10 +121,9 @@ class World:
         if config['save_height_img']:
             self.height_img.save(p / f"{self.config.seed}-height.png")
         if config['save_config']: 
-            self.config.save_to(p / f"{self.config.seed}-config.ini")
+            self.config._save_to(p / f"{self.config.seed}-config.ini")
         if config['save_stats']: 
-            with open(p / f"{self.config.seed}-stats.json", 'w') as fp:
-                json.dump(self.stats, fp, indent=4)
+            self.stats._save_to(p / f"{self.config.seed}-stats.json" )
 
     def __get_save_path(self):
         t = datetime.now().strftime("%Y_%m%d_%H%M%S")

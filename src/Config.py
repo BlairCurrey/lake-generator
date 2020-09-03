@@ -1,5 +1,4 @@
 from configparser import ConfigParser
-import os
 from pathlib import Path
 import random as rand
 
@@ -49,11 +48,10 @@ Description of available settings in `config.ini`:
 
 class Config:
     
+    PATH = ('.')
     CONFIG_FILE = 'src/config.ini'
     IMG = {'x': 2048, 'y': 1024}
     SEED = rand.randint(1,100000)
-    ELEVATION = 840
-    ELEVATION_UNIT = "ft"
 
     def __init__(self):
         self.parser = ConfigParser()
@@ -89,15 +87,13 @@ class Config:
         self.output['save_stats'] = self.parser.getboolean('output', 'save_stats', fallback=True)
 
     def get_rand_file(self):
-        f = rand.choice(os.listdir("filters\\"))
-        return "filters\\" + f
+        p = Path('filters')
+        return rand.choice(list(p.glob("**/*")))
 
-    def save_to(self, path):
+    def _save_to(self, path):
         with open(f'{path}', 'w') as f:
             self.parser.write(f)
 
 if __name__ == "__main__":
-    # c = Config()
-    # print(c.output['show'])
-    p = Path('.')
-    print(p.cwd())
+    c = Config()
+    print(c.get_rand_file())
