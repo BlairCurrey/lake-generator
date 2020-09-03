@@ -16,7 +16,11 @@ Description of available settings in `config.ini`:
         lacunarity:
 
         [filters]       filter and post-processing settings
-        land_bias:
+
+        land_bias:      Float number that adjusts how much land there is. Can 
+                        be set to negative to decrease amount of land. Defaults 
+                        to 0.0. Recommended range is -0.25 to 0.25
+
         path:           Empty or ommitted will result in a random choice which 
                         is recommended if you are generating lots of images and 
                         want variety.
@@ -28,10 +32,14 @@ Description of available settings in `config.ini`:
         weight:         A multiplier to control how much effect the filter has.
 
         [output]
-        show = True
-        dir = maps/
-        save_config = True
-        save_stats = True
+        show:           True (default) or False. Controls whether image is
+                        opened after the program is run.
+        dir:            Name of file or path relative to the root directory for
+                        saving outputs. Default is maps.
+        save_config:    True (default) or False. Controls whether or not the
+                        .ini config is saved after the program runs
+        save_stats:     True (default) or False. Controls whether or not the
+                        .json stats file is saved after the program runs
 """
 
 class Config:
@@ -80,5 +88,7 @@ class Config:
             self.parser.write(f)
 
 if __name__ == "__main__":
-    c = Config()
-    print(c.output['show'])
+    # c = Config()
+    # print(c.output['show'])
+    p = Path('.')
+    print(p.cwd())
