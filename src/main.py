@@ -7,5 +7,7 @@ if __name__ == "__main__":
     w = World(CONFIG)
     print(w.stats.elevation)
     w.color_img.show()
-    w.height_img.show()
+    # w.height_img.show()
+    # w.noise_img.show()
+    # w.filtered_img.show()
     w.save()

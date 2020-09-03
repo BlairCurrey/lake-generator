@@ -81,7 +81,6 @@ class Config:
         self.filters['weight'] = self.parser.getfloat('filters', 'weight', fallback=0.67)
 
         # output
-        self.output['show'] = self.parser.getboolean('output', 'show', fallback=True)
         self.output['dir'] = self.parser.get('output', 'dir', fallback="maps")
         self.output['save_color_img'] = self.parser.getboolean('output', 'save_color_img', fallback=True)
         self.output['save_height_img'] = self.parser.getboolean('output', 'save_height_img', fallback=True)
