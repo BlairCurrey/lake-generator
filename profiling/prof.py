@@ -2,14 +2,16 @@ import cProfile
 import pstats
 import io
 import os
-from Noisemap import Noisemap
+from World import World
 from Config import Config
 
 pr = cProfile.Profile()
 pr.enable()
 ####
-SETTINGS = Config()
-Noisemap(SETTINGS)
+CONFIG = Config()
+w = World(CONFIG)
+w.color_img.show()
+w.save()
 ###
 pr.disable()
 s = io.StringIO()
