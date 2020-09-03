@@ -15,7 +15,7 @@ class World:
         self.config = config
         self.height_matrix = self.__get_height_matrix()
         self.height_img = self.__get_height_img()
-        self.stats = Stats(self.height_matrix)
+        self.stats = Stats(self.config.elevation_range, self.height_matrix)
         self.rgb_matrix = self.__get_rgb_matrix()
         self.color_img = self.__get_color_img()
 

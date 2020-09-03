@@ -52,11 +52,13 @@ class Config:
     CONFIG_FILE = 'src/config.ini'
     IMG = {'x': 2048, 'y': 1024}
     SEED = rand.randint(1,100000)
+    ELEVATION_RANGE = (0, 5000)
 
     def __init__(self):
         self.parser = ConfigParser()
         self.img = self.IMG
         self.seed = self.SEED
+        self.elevation_range = self.ELEVATION_RANGE
         self.noise = {}
         self.filters = {}
         self.output = {}
