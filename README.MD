@@ -1,6 +1,6 @@
 This program procedurally generates images of lakes from the [noise package](https://github.com/caseman/noise) and the included [filters](/filters). I was originally inspired by [this blog post](https://medium.com/@yvanscher/playing-with-perlin-noise-generating-realistic-archipelagos-b59f004d8401) about procedurally generating islands.
 
-# [Skip the blabbering ... how does it work?](#how-does-it-work?)
+# [Skip the blabbering ... how does it work?](#how-does-it-work)
 
 ## But... why?
 I have always been interested in the creative powers of computing. When I was younger I enjoyed playing with different simulators and games with procedural generation. Delegating creative powers to a computer affords a privileged position - you can control the process but escape the minutiae. Even though you define everything you can still explore the results with curiousity and enthusiasm.
