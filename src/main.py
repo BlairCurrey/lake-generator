@@ -1,4 +1,4 @@
-from Noisemap import World
+from World import World
 from Filter import Filter
 from Config import Config
 
