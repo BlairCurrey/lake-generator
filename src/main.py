@@ -1,7 +1,11 @@
-from Noisemap import Noisemap
+from Noisemap import World
 from Filter import Filter
 from Config import Config
 
 if __name__ == "__main__":
-    SETTINGS = Config()
-    Noisemap(SETTINGS)
+    CONFIG = Config()
+    w = World(CONFIG)
+    print(w.stats)
+    w.color_img.show()
+    w.height_img.show()
+    w.save()
