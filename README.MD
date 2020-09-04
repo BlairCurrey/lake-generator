@@ -21,7 +21,7 @@ The process starts with initializing the matrix and filling it with noise values
 
 ![noise-img](media/54089-noise.png)
 
-The image looks weird (unlike "normal" perlin noise) because it's range is between -1.0 and 1.0. We will constrain it to 0.0 and -1.0, but first we will apply our filter (defined in <code>config.ini</code>, or else a random one), which ensures there is some sort of "lake" shape. Here is our matrix less the filter, followed by the filter in use:
+The image looks weird (unlike "normal" perlin noise) because it's range is between -1.0 and 1.0. We will constrain it to 0.0 and 1.0, but first we will apply our filter (defined in <code>config.ini</code>, or else a random one), which ensures there is some sort of "lake" shape. Here is our matrix less the filter, followed by the filter in use:
 
 ![filtered-img](media/54089-filtered.png) ![filtered](media/lake18-sm.png)
 
