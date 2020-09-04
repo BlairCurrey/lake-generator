@@ -9,7 +9,7 @@ In addition, I spent my formative years in Minnesota, Land of 10,000 Lakes, wher
 
 From a more technical perspective, it offered a good opportunity explore the numpy library, especially matrix operations, and image processing. 
 
-This was probably my first independent project and I have since returned to improve it (dramatically). I have applied what I've learned in terms of object-oriented design and analyzing algorithms. I intend to do a proper write-up on my improvements, but for now you can see [my notes](/profiling/notes.txt) in the 'profiling' folder. The gist of it is the code is much better encapsulated, user friendly, and faster by more than a factor of 10.
+This was probably my first independent project and I have since returned to improve it (dramatically). I have applied what I've learned in terms of object-oriented design and analyzing algorithms. I intend to do a proper write-up on my improvements, but for now you can see [my notes](/profiling/notes.txt) in the <code>/profiling/code> directory along with some profiling results. The gist of it is the code is much better encapsulated, user friendly, and faster by more than a factor of 10.
 
 # How does it work?
 
