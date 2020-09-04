@@ -13,8 +13,6 @@ PATH = Path('.').absolute()
 class World:
     def __init__(self, config):
         self.config = config
-        self.noise_img = None
-        self.filtered_img = None
         self.height_matrix = self.__get_height_matrix()
         self.height_img = self.__get_height_img()
         self.stats = Stats(self.config.elevation_range, self.height_matrix)
@@ -61,7 +59,6 @@ class World:
                                         lacunarity = lacunarity, 
                                         repeatx= x, 
                                         repeaty= y)
-        self.noise_img = Image.fromarray(np.uint8(noise_matrix * 255) , 'L')
         return noise_matrix
 
     def __get_filtered_and_constrained(self, noise_matrix, config):
@@ -70,7 +67,6 @@ class World:
         filtered_matrix = np.subtract(noise_matrix,
                                       filter_.data * 
                                       filter_.weight)
-        self.filtered_img = Image.fromarray(np.uint8(filtered_matrix * 255) , 'L')
         #Constrains values between 0-1
         constrained_matrix = np.interp(filtered_matrix, 
                                 (np.amin(filtered_matrix), 
@@ -119,9 +115,6 @@ class World:
         # Find save path
         p = self.__get_save_path()
         config = self.config.output # shorten
-
-        self.noise_img.save(p / f"{self.config.seed}-noise.png")
-        self.filtered_img.save(p / f"{self.config.seed}-filtered.png")
 
         if config['save_color_img']:
             self.color_img.save(p / f"{self.config.seed}.png")
