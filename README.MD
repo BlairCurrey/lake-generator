@@ -9,7 +9,7 @@ In addition, I spent my formative years in Minnesota, Land of 10,000 Lakes, wher
 
 From a more technical perspective, it offered a good opportunity explore the numpy library, especially matrix operations, and image processing. 
 
-This was probably my first independent project and I have since returned to improve it (dramatically). I have applied what I've learned in terms of object-oriented design and analyzing algorithms. I intend to do a proper write-up on my improvements, but for now you can see [my notes](/profiling/notes.txt) in the <code>/profiling/code> directory along with some profiling results. The gist of it is the code is much better encapsulated, user friendly, and faster by more than a factor of 10.
+This was probably my first independent project and I have since returned to improve it (dramatically). I have applied what I've learned in terms of object-oriented design and analyzing algorithms. I intend to do a proper write-up on my improvements, but for now you can see [my notes](/profiling/notes.txt) in the <code>/profiling</code> directory along with some profiling results. The gist of it is the code is much better encapsulated, user friendly, and faster by more than a factor of 10.
 
 # How does it work?
 
@@ -33,4 +33,4 @@ At this point we can assign certain colors to elements that fall within a certai
 
 ![lake-img](media/54089.png)
 
-In addition, it outputs some stats as a JSON object as well as a copy of the config.ini file so that you can see what configuration was used.
+In addition, it outputs some stats to a JSON file as well as a copy of the config.ini so that you can see what configuration was used.
