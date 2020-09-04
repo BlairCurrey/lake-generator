@@ -7,9 +7,9 @@ I have always been interested in the creative powers of computing. When I was yo
 
 In addition, I spent my formative years in Minnesota, Land of 10,000 Lakes, where I escaped up north to the [BWCA](https://bwca.com/) as often as possible. I think this project is an expression of that same desire to explore.
 
-From a more technical perspective, it offered a good opportunity explore the numpy library, especially matrix operations, and image processing. 
+From a more technical perspective, it offered a good opportunity to explore the numpy library, especially matrix operations, and image processing. 
 
-This was probably my first independent project and I have since returned to improve it (dramatically). I have applied what I've learned in terms of object-oriented design and analyzing algorithms. I intend to do a proper write-up on my improvements, but for now you can see [my notes](/profiling/notes.txt) in the <code>/profiling</code> directory along with some profiling results. The gist of it is the code is much better encapsulated, user friendly, and faster by more than a factor of 10.
+This was probably my first independent project and I have since returned to improve it. The difference is dramatic. I have applied what I've learned in terms of object-oriented design and analyzing algorithms. I intend to do a proper write-up on my improvements, but for now you can see [my notes](/profiling/notes.txt) in the <code>/profiling</code> directory along with some profiling results. The gist of it is the code is much better encapsulated, user friendly, and faster by more than a factor of 10.
 
 # How does it work?
 
@@ -25,7 +25,7 @@ The image looks weird (unlike "normal" perlin noise) because it's range is betwe
 
 ![filtered-img](media/54089-filtered.png) ![filtered](media/lake18-sm.png)
 
-Now we will normalize the range so that all of our number fall between 0.0-1.0. Darkest is 0.0, lightest is 1.0.
+Now we will normalize the range so that all of our number fall between 0.0 and 1.0. Darkest is 0.0, lightest is 1.0.
 
 ![height-img](media/54089-height.png)
 
