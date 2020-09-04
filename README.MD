@@ -33,4 +33,16 @@ At this point we can assign certain colors to elements that fall within a certai
 
 ![lake-img](media/54089.png)
 
-In addition, it outputs some stats to a JSON file as well as a copy of the config.ini so that you can see what configuration was used.
+In addition, it saves a copy of the config.ini so that you can see what configuration was used and some statistics in JSON.
+```json
+{
+    "low": {
+        "value": 880,
+        "location": "(522, 1612)"
+    },
+    "high": {
+        "value": 935,
+        "location": "(302, 2034)"
+    }
+}
+```
