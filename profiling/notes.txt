@@ -1,3 +1,6 @@
+profile-results-baseline.txt
+Same as profile-results-0 but before the refactor. No performance difference.
+
 profile-results-0.txt
 Baseline. These are the results of the program after refactoring into classes (but not changing functions calls)
 Biggest offender is pnoise function in make_noise. Called 8388608 times. Width/Height were 2048 and 1024 at the time.
