@@ -48,7 +48,6 @@ class World:
         noise_matrix = np.zeros((y, x))
 
         # Fill world matrix with noise
-        # Values tend to fall 
         for i in range(y):
             for j in range(x):
                 noise_matrix[i][j] = noise.pnoise3(x = i/scale, 
@@ -75,7 +74,8 @@ class World:
         #adjust if necessary
         lb = config['land_bias'] # shorten
         if lb != 0.0:
-            constrained_matrix[constrained_matrix is not None] += lb
+            print(f"land bias: {lb}")
+            constrained_matrix += lb
 
         return constrained_matrix
 
