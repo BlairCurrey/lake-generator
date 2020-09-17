@@ -74,7 +74,6 @@ class World:
         #adjust if necessary
         lb = config['land_bias'] # shorten
         if lb != 0.0:
-            print(f"land bias: {lb}")
             constrained_matrix += lb
 
         return constrained_matrix
