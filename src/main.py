@@ -1,5 +1,4 @@
 from World import World
-from Filter import Filter
 from Config import Config
 
 if __name__ == "__main__":
